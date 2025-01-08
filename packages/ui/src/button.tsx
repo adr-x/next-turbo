@@ -1,6 +1,7 @@
 "use client";
 
 import { ReactNode } from "react";
+import { CONSTANT } from '@/config/constant'
 
 interface ButtonProps {
   children: ReactNode;
@@ -14,7 +15,7 @@ export const Button = ({ children, className, appName }: ButtonProps) => {
       className={className}
       onClick={() => alert(`Hello from your ${appName} app!`)}
     >
-      {children}
+      {children} {CONSTANT}
     </button>
   );
 };
